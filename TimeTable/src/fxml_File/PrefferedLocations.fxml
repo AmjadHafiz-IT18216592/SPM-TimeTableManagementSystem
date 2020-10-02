@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="homepane" prefHeight="798.0" prefWidth="1548.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.PrefferedLocationsController">
+   <children>
+      <ScrollPane layoutX="440.0" layoutY="40.0" prefHeight="1198.0" prefViewportHeight="1000.0" prefWidth="1138.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2000.0" prefWidth="1093.0">
+               <children>
+                  <Pane layoutY="-1.0" prefHeight="420.0" prefWidth="960.0" AnchorPane.bottomAnchor="1588.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="-1.0">
+                     <children>
+                        <Button fx:id="save1" layoutX="142.0" layoutY="210.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Save" />
+                        <Label layoutX="114.0" layoutY="33.0" prefHeight="31.0" prefWidth="139.0" text="Locations for Lecturers" />
+                        <TableView layoutX="395.0" layoutY="17.0" prefHeight="301.0" prefWidth="450.0">
+                           <columns>
+                              <TableColumn prefWidth="125.0" text="Lecturer" />
+                              <TableColumn prefWidth="324.0" text="Location" />
+                           </columns>
+                        </TableView>
+                        <ComboBox fx:id="lecID" layoutX="108.0" layoutY="96.0" prefWidth="150.0" promptText="Lecturer ID" />
+                        <ComboBox fx:id="lid1" layoutX="108.0" layoutY="155.0" prefWidth="150.0" promptText="Location ID" />
+                     </children>
+                  </Pane>
+                  <Pane layoutY="419.0" prefHeight="420.0" prefWidth="960.0" AnchorPane.bottomAnchor="1208.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="419.0">
+                     <children>
+                        <Button fx:id="save2" layoutX="138.0" layoutY="210.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Save" />
+                        <Label layoutX="116.0" layoutY="38.0" prefHeight="54.0" prefWidth="150.0" text="Location for sessions" />
+                        <TableView layoutX="399.0" layoutY="17.0" prefHeight="301.0" prefWidth="450.0">
+                           <columns>
+                              <TableColumn prefWidth="125.0" text="Session ID" />
+                              <TableColumn prefWidth="324.0" text="Location ID" />
+                           </columns>
+                        </TableView>
+                        <ComboBox fx:id="sessionID" layoutX="99.0" layoutY="103.0" prefWidth="150.0" promptText="Sesssion ID" />
+                        <ComboBox fx:id="lid2" layoutX="99.0" layoutY="153.0" prefWidth="150.0" promptText="Location ID" />
+                     </children>
+                  </Pane>
+                  <Pane layoutY="804.0" prefHeight="420.0" prefWidth="960.0" AnchorPane.bottomAnchor="842.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="804.0">
+                     <children>
+                        <Button layoutX="142.0" layoutY="227.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Save" />
+                        <Label layoutX="116.0" layoutY="24.0" prefHeight="31.0" prefWidth="137.0" text="Locations for groups" />
+                        <TableView layoutX="394.0" layoutY="17.0" prefHeight="301.0" prefWidth="450.0">
+                           <columns>
+                              <TableColumn prefWidth="125.0" text="Group ID" />
+                              <TableColumn prefWidth="124.0" text="Sub group ID" />
+                              <TableColumn prefWidth="200.0" text="Location ID" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <ComboBox fx:id="groupID" layoutX="95.0" layoutY="885.0" prefWidth="150.0" promptText="Group ID" />
+                  <ComboBox fx:id="sgroupID" layoutX="95.0" layoutY="929.0" prefWidth="150.0" promptText="Subgroup ID" />
+                  <ComboBox layoutX="95.0" layoutY="971.0" prefWidth="150.0" promptText="Location ID" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Pane fx:id="pane1" layoutX="75.0" layoutY="10.0" prefHeight="798.0" prefWidth="344.0" style="-fx-background-color: #282363;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="14.0" layoutY="165.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="14.0" layoutY="165.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="14.0" layoutY="165.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="12.0" layoutY="251.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="21.0" layoutY="331.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="14.0" layoutY="645.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="21.0" layoutY="570.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="14.0" layoutY="491.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcWidth="5.0" height="5.0" layoutX="14.0" layoutY="413.0" strokeType="INSIDE" width="160.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#231265" />
+                        <Stop color="#b4d029" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Label layoutX="196.0" layoutY="152.0" prefHeight="16.0" prefWidth="66.0" text="Days">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.16504854368932043" endY="0.912621359223301">
+                     <stops>
+                        <Stop color="#f3ff0c" />
+                        <Stop color="#fcfcfc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="196.0" layoutY="240.0" prefHeight="27.0" prefWidth="74.0" text="Lecturers">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.16504854368932043" endY="0.912621359223301">
+                     <stops>
+                        <Stop color="#f3ff0c" />
+                        <Stop color="#fcfcfc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="196.0" layoutY="323.0" prefHeight="27.0" prefWidth="98.0" text="Students">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.16504854368932043" endY="0.912621359223301">
+                     <stops>
+                        <Stop color="#f3ff0c" />
+                        <Stop color="#fcfcfc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="196.0" layoutY="405.0" prefHeight="27.0" prefWidth="91.0" text="Subjects">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.16504854368932043" endY="0.912621359223301">
+                     <stops>
+                        <Stop color="#f3ff0c" />
+                        <Stop color="#fcfcfc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="196.0" layoutY="483.0" prefHeight="16.0" prefWidth="66.0" text="Tags">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.16504854368932043" endY="0.912621359223301">
+                     <stops>
+                        <Stop color="#f3ff0c" />
+                        <Stop color="#fcfcfc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="200.0" layoutY="557.0" prefHeight="27.0" prefWidth="98.0" text="Locations">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.16504854368932043" endY="0.912621359223301">
+                     <stops>
+                        <Stop color="#f3ff0c" />
+                        <Stop color="#fcfcfc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="193.0" layoutY="632.0" prefHeight="27.0" prefWidth="98.0" text="Timetable">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.16504854368932043" endY="0.912621359223301">
+                     <stops>
+                        <Stop color="#f3ff0c" />
+                        <Stop color="#fcfcfc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="homepane1" layoutX="36.0" layoutY="36.0" prefHeight="200.0" prefWidth="66.0" style="-fx-background-color: #282363;" styleClass="homepane" stylesheets="@../application/application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="homebutton" fx:id="homebutton" layoutX="9.0" layoutY="70.0" mnemonicParsing="false" onAction="#loadHome" onMouseEntered="#run1" onMouseExited="#run2" prefHeight="29.0" prefWidth="29.0" styleClass="homebutton" stylesheets="@../application/application.css">
+               <tooltip>
+                  <Tooltip text="Home" />
+               </tooltip>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/homeLogo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="homebutton" fx:id="daybutton" layoutX="9.0" layoutY="144.0" mnemonicParsing="false" onMouseEntered="#run1" onMouseExited="#run2" prefHeight="29.0" prefWidth="29.0" styleClass="homebutton" stylesheets="@../application/application.css">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/loc.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="homebutton" fx:id="lecturerbutton1" layoutX="9.0" layoutY="227.0" mnemonicParsing="false" onMouseEntered="#run1" onMouseExited="#run2" prefHeight="29.0" prefWidth="29.0" styleClass="homebutton" stylesheets="@../application/application.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Group%208.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="homebutton" fx:id="studentbutton" layoutX="4.0" layoutY="311.0" mnemonicParsing="false" onMouseEntered="#run1" onMouseExited="#run2" prefHeight="29.0" prefWidth="29.0" styleClass="homebutton" stylesheets="@../application/application.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Union2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="homebutton" fx:id="subjectbutton" layoutX="5.0" layoutY="399.0" mnemonicParsing="false" onMouseEntered="#run1" onMouseExited="#run2" prefHeight="29.0" prefWidth="29.0" styleClass="homebutton" stylesheets="@../application/application.css">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Group%209.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="homebutton" fx:id="tagbutton" layoutX="4.0" layoutY="477.0" mnemonicParsing="false" onMouseEntered="#run1" onMouseExited="#run2" prefHeight="29.0" prefWidth="29.0" styleClass="homebutton" stylesheets="@../application/application.css">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/tagicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="homebutton" fx:id="locationbutton" layoutX="4.0" layoutY="558.0" mnemonicParsing="false" onMouseEntered="#run1" onMouseExited="#run2" prefHeight="29.0" prefWidth="29.0" styleClass="homebutton" stylesheets="@../application/application.css">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Union.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="homebutton" fx:id="timetab" layoutX="4.0" layoutY="632.0" mnemonicParsing="false" onMouseEntered="#run1" onMouseExited="#run2" prefHeight="29.0" prefWidth="29.0" styleClass="homebutton" stylesheets="@../application/application.css">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/tim.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

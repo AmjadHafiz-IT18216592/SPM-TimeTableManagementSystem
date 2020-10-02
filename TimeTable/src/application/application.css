@@ -1,0 +1,93 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.homepane{
+	
+	-fx-background-color: #282363;
+	
+}
+.homebutton{
+-fx-background-color:transparent;
+}
+.lecturerbutton,.daybutton,.studentbutton,.subjectbutton,.tagbutton,.locationbutton,.timetab{
+	-fx-background-color:#282363;
+	
+	
+}
+.homebutton:hover{
+	-fx-background-color:#f2ff7e;
+	-fx-cursor:hand;
+}
+.lecturerbutton:hover,.daybutton:hover,.studentbutton:hover,.subjectbutton:hover,.tagbutton:hover,.locationbutton:hover,.timetab:hover{
+	-fx-background-color:#f2ff7e;
+	-fx-cursor:hand;
+}
+.text{
+	-fx-background-color:transparent;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-border-color:#616CA7;
+	-fx-border-radius:10;
+}
+.butt{
+	-fx-background-color:#5155A3;
+	-fx-background-radius:20px;
+	}
+.loginbuttons{
+	-fx-background-color:transparent;
+}
+.input{
+	-fx-prompt-text-fill:#072F5F;
+	-fx-background-color:transparent;
+	-fx-font-size:16px;
+	
+}
+.bigText{
+	-fx-font-size:41px;
+	-fx-font-family:'Nirmala UI';
+} 
+.leb{
+	-fx-prompt-text-fill:#072F5F;
+	-fx-font-size:16px;}
+
+
+.table-View{
+	-fx-background-color:#E6E5F1;
+	
+}
+#cb3{
+	-fx-font-size:17px;
+}
+
+
+.column-header-background{
+	-fx-background-color:#B1AEC9;
+}
+.verticalBox{
+	-fx-background-color:transparent;
+}
+.verticalBox:hover{
+	
+	-fx-border-color:linear-gradient(#072F5F,#FFF853);
+	-fx-border-width:3px;
+	
+}
+.paneBox{
+	-fx-background-color:transparent;
+}
+.but{
+	-fx-background-color:transparent;
+	-fx-text-fill:#072F5F;
+}
+.but:hover{
+	-fx-text-fill:#FFF853;
+}
+.firstButt:hover{
+	-fx-text-fill:#072F5F;
+}
+.column-header,.filler{
+	-fx-background-color:transparent;
+	-fx-border-width:0 0 3px 0;
+	-fx-border-color:#616CA7;
+	-fx-font-size:17px;
+	-fx-font-family:'Century Gothic';
+	-fx-size:60px;
+}
